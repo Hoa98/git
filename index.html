@@ -64,6 +64,21 @@ git branch -b [branch_name] <span>--checkout và tạo nhánh mới</span>
         <li> <code> git remote add origin [url] <span> --> add một remote repository tên là origin với url là repository trên Github</span></code> </li>
         <li> <code> git push -u origin master <span> --> Push nhánh master từ local lên nhánh master trên origin</span></code> </li>
     </ol>
+    <h4>Các bước tạo nhánh và merge code</h4>
+    <ol>
+        <li><code>git branch -b develop <span> --> Tạo nhánh develop và thực hiện một số sự thay đổi</span></code></li>
+        <li><code>git add .gitignore <span> --> Tạo file gitignore để thêm các thành phần muốn bỏ qua</span></code></li>
+        <li><code>git status <span> --> Kiểm tra xem sự thay đổi có đúng không</span></code></li>
+        <li><code>git add * <span> --> Thêm file gitignore vào stage area</span></code></li>
+        <li><code>git commit -m "Add gitignore file" <span> </span></code></li>
+        <li><code>git push origin develop <span> --> đẩy nhánh develop lên remote repository</span></code></li>
+        <li><code>git status <span> --> Check tiếp xem có gì thay đổi và nhánh hiện tại là gì</span></code></li>
+        <li><code>git checkout master <span> --> Chuyển nhánh hiện tại sang master</span></code></li>
+        <li><code>git fetch origin <span> --> Lấy trạng thái mới nhất xem có ai commit lên master hay không</span></code></li>
+        <li><code>git pull origin master <span> --> Nếu có thì pull về để lấy code mới nhất</span></code></li>
+        <li><code>git merge develop <span> --> Merge file gitignore đang đặt ở nhánh develop sang master</span></code></li>
+        <li><code>git push origin master <span> --> Lại đẩy sự thay đổi ở master dưới local lên master trên server.</span></code></li>
+    </ol>
 </body>
 
 </html>
