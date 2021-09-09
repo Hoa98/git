@@ -51,7 +51,7 @@ git stash apply [stash_name] <span>--đẩy changes từ 1 stash vào một nhá
     </pre></code></li>
         <li>Chuyển nhánh or tạo nhánh mới: <code><pre>
 git branch [branch_name] <span>--tạo nhánh mới</span>
-git branch -b [branch_name] <span>--checkout và tạo nhánh mới</span>
+git checkout -b [branch_name] <span>--checkout và tạo nhánh mới</span>
     </pre></code></li>
     </ul>
     <br>
@@ -66,7 +66,7 @@ git branch -b [branch_name] <span>--checkout và tạo nhánh mới</span>
     </ol>
     <h4>Các bước tạo nhánh và merge code</h4>
     <ol>
-        <li><code>git branch -b develop <span> --> Tạo nhánh develop và thực hiện một số sự thay đổi</span></code></li>
+        <li><code>git checkout -b develop <span> --> Tạo nhánh develop và thực hiện một số sự thay đổi</span></code></li>
         <li><code>git add .gitignore <span> --> Tạo file gitignore để thêm các thành phần muốn bỏ qua</span></code></li>
         <li><code>git status <span> --> Kiểm tra xem sự thay đổi có đúng không</span></code></li>
         <li><code>git add * <span> --> Thêm file gitignore vào stage area</span></code></li>
